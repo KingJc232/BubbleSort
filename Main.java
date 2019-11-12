@@ -9,13 +9,9 @@ public class Main
    {
       
       int[] arr = {1,5,2,6,3,-4, 10, 7}; 
-  
       printArr("Before:" , arr); 
-
       bubbleSort(arr, 0, arr.length-1); 
-
       printArr("After BubbleSort: " , arr); 
-
    }
 
   /** Implements BubbleSort Recursively 
@@ -37,7 +33,6 @@ public class Main
             swap(arr, i, i+1); 
       }
 
-      //Recursively Calling Bubble sort to next wave 
       //Reason Doing Last -1 is because the last element is in its correct position After Every Iteration 
       bubbleSort(arr, first, last -1); 
 
